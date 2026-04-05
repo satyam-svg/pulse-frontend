@@ -1,0 +1,370 @@
+Maine tumhare PDF ka **proper clean text extract** kar diya hai — structured format me 👇
+(Ye exactly tumhare assignment ka organized version hai)
+Source: 
+
+---
+
+# 🎥 Video Upload, Sensitivity Processing & Streaming App
+
+# 📌 Overview
+
+Build a **full-stack application** where users:
+
+* Upload videos
+* System checks sensitivity (Safe / Flagged)
+* Show real-time progress
+* Stream videos
+
+---
+
+# 🎯 Core Features (Must Build)
+
+### 1. Full Stack Architecture
+
+Backend:
+
+* Node.js
+* Express
+* MongoDB
+
+Frontend:
+
+* React
+* Vite
+
+---
+
+### 2. Video Management
+
+* Upload videos
+* Store securely
+* Save metadata
+
+---
+
+### 3. Content Analysis
+
+System should detect:
+
+* Safe videos
+* Flagged videos
+
+---
+
+### 4. Real-Time Updates
+
+Show:
+
+* Upload progress
+* Processing progress
+* Completed status
+
+---
+
+### 5. Streaming Service
+
+* Video playback
+* HTTP Range requests
+* Smooth streaming
+
+---
+
+### 6. Access Control
+
+* Multi-tenant system
+* Role based access
+
+---
+
+# 🔧 Backend Requirements
+
+### REST APIs
+
+Create APIs for:
+
+* Upload Video
+* List Videos
+* Stream Video
+
+---
+
+### Content Processing
+
+* Sensitivity analysis
+* Status update
+
+---
+
+### Real-Time Communication
+
+Use:
+
+* Socket.io
+
+For:
+
+* Upload progress
+* Processing updates
+
+---
+
+### Database
+
+Store:
+
+* Video metadata
+* User info
+* Status
+
+Use:
+
+* MongoDB
+
+---
+
+### Authentication
+
+Implement:
+
+* Login
+* Signup
+* JWT Auth
+
+---
+
+# 🎨 Frontend Requirements
+
+### Upload Interface
+
+* Upload video
+* Show progress
+
+---
+
+### Dashboard
+
+Show:
+
+* Processing status
+* Video list
+
+---
+
+### Video Library
+
+Show:
+
+* All videos
+* Status
+
+---
+
+### Media Player
+
+* Play video
+* Streaming support
+
+---
+
+### Responsive UI
+
+* Mobile support
+* Clean UI
+
+---
+
+# 🧠 Multi-Tenant Architecture
+
+Each user:
+
+* Only sees their videos
+* Data isolated
+
+---
+
+# 👥 Roles
+
+### Viewer
+
+* Only watch videos
+
+---
+
+### Editor
+
+* Upload videos
+* Edit videos
+
+---
+
+### Admin
+
+* Full control
+* Manage users
+
+---
+
+# 🔄 Video Processing Pipeline
+
+Steps:
+
+1. Upload validation
+2. Store video
+3. Sensitivity check
+4. Update status
+5. Prepare for streaming
+
+---
+
+# 📁 Project Structure
+
+Backend & frontend separate
+
+Example:
+
+```
+backend/
+frontend/
+```
+
+---
+
+# 📈 Stretch Goals (Optional)
+
+### Advanced Filtering
+
+* Safe videos
+* Flagged videos
+* Upload date filter
+
+---
+
+### Performance
+
+* Video compression
+* CDN
+* Caching
+
+---
+
+# 📦 Deliverables
+
+You must submit:
+
+### 1. Working App
+
+Must show:
+
+* Upload
+* Processing
+* Sensitivity check
+* Streaming
+
+---
+
+### 2. Code Quality
+
+* Clean structure
+* Error handling
+
+---
+
+### 3. Documentation
+
+Include:
+
+* Setup guide
+* API docs
+* Architecture
+
+---
+
+### 4. Deployment
+
+Submit:
+
+* Live link
+* GitHub repo
+* Demo video
+
+---
+
+# 👤 User Flow
+
+1. Signup / Login
+2. Upload Video
+3. Processing
+4. Sensitivity check
+5. Stream video
+6. Manage videos
+
+---
+
+# 🛠️ Backend Tech Stack
+
+* Node.js
+* Express
+* MongoDB
+* Socket.io
+* JWT
+* Multer
+
+---
+
+# 🎨 Frontend Tech Stack
+
+* React
+* Vite
+* Tailwind / CSS
+* Axios
+* Socket.io
+
+---
+
+# ☁️ Infrastructure
+
+Storage:
+
+* AWS S3 / Local
+
+Processing:
+
+* FFmpeg
+
+Hosting:
+
+* Vercel / Heroku
+
+Database:
+
+* MongoDB Atlas
+
+---
+
+# ✅ Success Criteria
+
+App must include:
+
+* Video upload
+* Real-time progress
+* Sensitivity detection
+* Streaming
+* Multi-tenant
+* Role system
+
+---
+
+Praveen — ye **industry-level assignment hai**
+Agar tum ye bana dete ho:
+
+🔥 Resume strong
+🔥 Internship easy
+🔥 Placement boost
+
+---
+
+Agar chaho main next bata deta hoon:
+
+* Step-by-step build order
+* Folder structure
+* Database schema
