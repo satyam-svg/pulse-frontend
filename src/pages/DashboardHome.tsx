@@ -68,8 +68,9 @@ export function DashboardHome() {
           setSharedVideos([])
         } else {
           setAdminVideos([])
-          const my = (data.myVideos ?? []).map((v) => apiVideoToItem(v, fallback))
-          const shared = (data.sharedWithMe ?? []).map((v: ApiVideoJson) =>
+          const feed = data as { myVideos?: ApiVideoJson[]; sharedWithMe?: ApiVideoJson[] }
+          const my = (feed.myVideos ?? []).map((v) => apiVideoToItem(v, fallback))
+          const shared = (feed.sharedWithMe ?? []).map((v: ApiVideoJson) =>
             apiVideoToItem(v, fallback),
           )
           setMyVideos(my)

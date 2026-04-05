@@ -1,0 +1,9 @@
+﻿src/lib/api.ts(249,20): error TS2551: Property 'myVideos' does not exist on type 'ApiVideoFeedResponse'. Did you mean 'videos'?
+  Property 'myVideos' does not exist on type '{ allVideos: ApiVideoJson[]; videos?: ApiVideoJson[] | undefined; }'.
+src/lib/api.ts(249,46): error TS2339: Property 'sharedWithMe' does not exist on type 'ApiVideoFeedResponse'.
+  Property 'sharedWithMe' does not exist on type '{ allVideos: ApiVideoJson[]; videos?: ApiVideoJson[] | undefined; }'.
+src/pages/DashboardHome.tsx(71,28): error TS2551: Property 'myVideos' does not exist on type 'ApiVideoFeedResponse'. Did you mean 'videos'?
+  Property 'myVideos' does not exist on type '{ allVideos: ApiVideoJson[]; videos?: ApiVideoJson[] | undefined; }'.
+src/pages/DashboardHome.tsx(71,49): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/pages/DashboardHome.tsx(72,32): error TS2339: Property 'sharedWithMe' does not exist on type 'ApiVideoFeedResponse'.
+  Property 'sharedWithMe' does not exist on type '{ allVideos: ApiVideoJson[]; videos?: ApiVideoJson[] | undefined; }'.

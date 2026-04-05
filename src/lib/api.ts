@@ -3,12 +3,12 @@ import type { UserRole, VideoComment, VideoItem, VideoStatus } from '../types'
 
 const TOKEN_KEY = 'vsa_token'
 
-/** Backend API always targets port 5000 in this project. */
-export const API_ORIGIN_DEFAULT = 'http://localhost:5000'
+/** Deployed API default; override with `VITE_API_URL` for local backend (e.g. http://localhost:5000). */
+export const API_ORIGIN_DEFAULT = 'https://pulse-backend-28fy.onrender.com'
 
 /**
- * Full backend origin (port 5000). Browser calls `http://localhost:5000/api/...` directly — not via 5173.
- * Override with `VITE_API_URL` if needed (no trailing slash, no `/api` suffix).
+ * Full backend origin. Browser calls `${origin}/api/...` directly — not via the Vite dev port.
+ * Override with `VITE_API_URL` (no trailing slash, no `/api` suffix).
  */
 export function getApiBase(): string {
   let base = import.meta.env.VITE_API_URL ?? API_ORIGIN_DEFAULT
@@ -246,7 +246,8 @@ export function apiOwnerId(v: Pick<ApiVideoJson, 'owner'>): string {
 export function videosFromFeed(data: ApiVideoFeedResponse): ApiVideoJson[] {
   if ('allVideos' in data && Array.isArray(data.allVideos)) return data.allVideos
   if (Array.isArray(data.videos)) return data.videos
-  return [...(data.myVideos ?? []), ...(data.sharedWithMe ?? [])]
+  const feed = data as { myVideos?: ApiVideoJson[]; sharedWithMe?: ApiVideoJson[] }
+  return [...(feed.myVideos ?? []), ...(feed.sharedWithMe ?? [])]
 }
 
 export type ApiViewerListItem = {

@@ -31,7 +31,7 @@ Monorepo-style app: **`server/`** (Express + MongoDB + Socket.io) and **Vite + R
    npm install
    npm run dev
    ```
-4. Open **http://localhost:5173** — API default **http://localhost:5000** (`VITE_API_URL` to override).
+4. Open **http://localhost:5173** — API default is the deployed backend **`https://pulse-backend-28fy.onrender.com`**. For a local API, set **`VITE_API_URL=http://localhost:5000`** in `.env.local`.
 
 ## Architecture (short)
 
